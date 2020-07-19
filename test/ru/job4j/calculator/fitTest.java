@@ -7,7 +7,7 @@ import ru.job4j.converter.Converter;
 public class fitTest {
 
     @Test
-    public static double manWeight(double height) {
+    public void manWeighttest () {
         double heigth = 187;
         double expected = 100;
         double out = fit.manWeight(heigth);
@@ -15,7 +15,7 @@ public class fitTest {
     }
 
     @Test
-    public static double womanWeight(double height) {
+    public void womanWeighttest () {
         double heigth = 187;
         double expected = 100;
         double out = fit.womanWeight(heigth);
