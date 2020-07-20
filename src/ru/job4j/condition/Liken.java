@@ -5,7 +5,7 @@ public class Liken {
         int first = 10;
         int second = 9;
 
-        boolean result = first > second;/* first больше second? */
+        boolean result = first > second; /* first больше second? */
                 System.out.println(result);
 
         boolean result2 = first < second; /* first меньше second? */
