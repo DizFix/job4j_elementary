@@ -4,6 +4,7 @@ public class Triangle {
     public static boolean exist(double ab, double ac, double bc) {
         if ((ab + ac) > bc && (ac + bc) > ab && (ab + bc) > ac) {
             System.out.println("Треугольник существует");
+            return true;
         } else {
             System.out.println("Треугольник существовать не может");
         }
