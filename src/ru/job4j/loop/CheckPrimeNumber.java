@@ -8,11 +8,13 @@ public class CheckPrimeNumber {
     }
 
     public static boolean check(int number) {
-        boolean prime = true;
+        boolean prime = false;
         for (int count = 2; count < number; count++) {
             if (number % count == 0) {
                 prime = false;
                 break;
+            } else {
+                prime = true;
             }
         }
         if (prime == true) {
