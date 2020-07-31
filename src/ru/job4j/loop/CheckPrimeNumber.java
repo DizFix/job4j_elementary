@@ -4,6 +4,7 @@ public class CheckPrimeNumber {
     public static void main(String[] args) {
         check(6);
         check(5);
+        check(1);
     }
 
     public static boolean check(int number) {
@@ -12,8 +13,13 @@ public class CheckPrimeNumber {
             if (number % count == 0) {
                 prime = false;
                 break;
-                return prime;
             }
         }
+        if (prime == true) {
+            System.out.println(number + " " + "является простым числом");
+        } else {
+            System.out.println(number + " " + "не является простым числом");
+        }
+        return prime;
     }
 }
