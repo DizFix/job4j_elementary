@@ -8,16 +8,14 @@ public class CheckPrimeNumber {
     }
 
     public static boolean check(int number) {
-        boolean prime = false;
+        boolean prime = number > 1;
         for (int count = 2; count < number; count++) {
             if (number % count == 0) {
                 prime = false;
                 break;
-            } else {
-                prime = true;
             }
         }
-        if (prime == true) {
+        if (prime) {
             System.out.println(number + " " + "является простым числом");
         } else {
             System.out.println(number + " " + "не является простым числом");
