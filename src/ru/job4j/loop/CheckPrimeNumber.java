@@ -14,11 +14,11 @@ public class CheckPrimeNumber {
                 break;
             }
         }
-            if (prime) {
-                System.out.println(number + " " + "является простым числом");
-            } else {
-                System.out.println(number + " " + "не является простым числом");
-            }
+        if (prime) {
+            System.out.println(number + " " + "является простым числом");
+        } else {
+            System.out.println(number + " " + "не является простым числом");
+        }
             return prime;
         }
     }
