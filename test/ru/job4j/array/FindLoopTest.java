@@ -8,7 +8,7 @@ public class FindLoopTest {
 
     @Test
     public void whenArrayHas5Then0() {
-        int input[] = {5, 4, 3, 2};
+        int[] input = {5, 4, 3, 2};
         int value = 5;
         int result = FindLoop.indexOf(input, value);
         int expect = 0;
@@ -16,7 +16,7 @@ public class FindLoopTest {
     }
     @Test
     public void whenArrayHas5Then1() {
-        int input[] = {5, 4, 3, 2};
+        int[] input = {5, 4, 3, 2};
         int value = 1;
         int result = FindLoop.indexOf(input, value);
         int expect = -1;
@@ -24,7 +24,7 @@ public class FindLoopTest {
     }
     @Test
     public void whenArrayHas3Then2() {
-        int input[] = {3, 1, 2};
+        int[] input = {3, 1, 2};
         int value = 2;
         int result = FindLoop.indexOf(input, value);
         int expect = 2;
