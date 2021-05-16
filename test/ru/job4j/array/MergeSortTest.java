@@ -5,12 +5,12 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
-public class MergeelseTest {
+public class MergeSortTest {
 
     @Test
     public void whenBothEmpty() {
         int[] expect = new int[0];
-        int[] result = Mergeelse.merge(
+        int[] result = MergeSort.merge(
                 new int[0],
                 new int[0]
         );
@@ -20,7 +20,7 @@ public class MergeelseTest {
     @Test
     public void whenReorder() {
         int[] expect = {1, 2, 3, 4};
-        int[] result = Mergeelse.merge(
+        int[] result = MergeSort.merge(
                 new int[] {1, 3},
                 new int[] {2, 4}
         );
@@ -30,7 +30,7 @@ public class MergeelseTest {
     @Test
     public void whenAscOrder() {
         int[] expect = {1, 2, 3, 4};
-        int[] result = Mergeelse.merge(
+        int[] result = MergeSort.merge(
                 new int[] {1, 2},
                 new int[] {3, 4}
         );
@@ -40,7 +40,7 @@ public class MergeelseTest {
     @Test
     public void whenLeftLess() {
         int[] expect = {1, 2, 3, 3, 4};
-        int[] result = Mergeelse.merge(
+        int[] result = MergeSort.merge(
                 new int[] {1, 2, 3},
                 new int[] {3, 4}
         );
@@ -50,7 +50,7 @@ public class MergeelseTest {
     @Test
     public void whenLeftGreat() {
         int[] expect = {1, 2, 3, 4, 4};
-        int[] result = Mergeelse.merge(
+        int[] result = MergeSort.merge(
                 new int[] {1, 2},
                 new int[] {3, 4, 4}
         );
@@ -60,7 +60,7 @@ public class MergeelseTest {
     @Test
     public void whenLeftEmpty() {
         int[] expect = {1, 2, 3, 4};
-        int[] result = Mergeelse.merge(
+        int[] result = MergeSort.merge(
                 new int[] {},
                 new int[] {1, 2, 3, 4}
         );

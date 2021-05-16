@@ -1,6 +1,6 @@
 package ru.job4j.array;
 
-public class Mergeelse {
+public class MergeSort {
     public static int[] merge(int[] left, int[] right) {
         int[] rsl = new int[left.length + right.length];
         int positionA1 = 0;
