@@ -9,11 +9,6 @@ public class MathCalculator {
                 + multiply(first, second);
     }
 
-    public static void main(String[] args) {
-        System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
-        System.out.println("Разность двух чисел и деление двух чисел: " + substractAndDiv(10, 20));
-        System.out.println("Сумма вычисления всех четырех операций: " + sumAll(10, 20));
-    }
     public static double substractAndDiv(double first, double second) {
         return subtraction(first, second)
                 + division(first, second);
@@ -23,5 +18,10 @@ public class MathCalculator {
                 + multiply(first, second)
                 + subtraction(first, second)
                 + division(first, second);
+    }
+    public static void main(String[] args) {
+        System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
+        System.out.println("Разность двух чисел и деление двух чисел: " + substractAndDiv(10, 20));
+        System.out.println("Сумма вычисления всех четырех операций: " + sumAll(10, 20));
     }
 }
