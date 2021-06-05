@@ -15,5 +15,9 @@ public class ArrayDefinition {
         System.out.println(names[2]);
         String name = names[3];
         System.out.println(name);
+        System.out.println("Размер массива равен: " + ages.length);
+        System.out.println("Размер массива равен: " + surnames.length);
+        System.out.println("Размер массива равен: " + prices.length);
+        System.out.println("Размер массива равен: " + names.length);
     }
 }
